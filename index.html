@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div id="canvas-container"></div>
+    
+    <div id="status" class="disconnected">
+        <span class="material-icons">wifi_off</span>
+        <span>断开连接</span>
+    </div>
+
+    <div id="debug-info">
+        <div class="mesh-info">顶点数: 0 | 面数: 0</div>
+        <div class="fps-info">FPS: 60</div>
+    </div>
+
+    <div class="controls-panel">
+        <button class="control-button has-tooltip" id="reset-view">
+            <span class="material-icons">center_focus_strong</span>
+        </button>
+        <div class="tooltip">重置视图</div>
+
+        <button class="control-button has-tooltip" id="toggle-wireframe">
+            <span class="material-icons">grid_4x4</span>
+        </button>
+        <div class="tooltip">切换线框模式</div>
+
+        <button class="control-button has-tooltip" id="toggle-autorotate">
+            <span class="material-icons">rotate_right</span>
+        </button>
+        <div class="tooltip">切换自动旋转</div>
+
+        <button class="control-button has-tooltip" id="toggle-grid">
+            <span class="material-icons">grid_on</span>
+        </button>
+        <div class="tooltip">切换网格</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

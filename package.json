@@ -1,0 +1,13 @@
+{
+  "name": "blender-web-sync",
+  "version": "1.0.0",
+  "description": "Real-time Blender to Web sync using UDP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "blender-web-sync": "file:",
+    "ws": "^8.13.0"
+  }
+}
