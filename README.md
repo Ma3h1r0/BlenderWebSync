@@ -25,5 +25,5 @@
 
 1. 在Blender中，转到 Edit > Preferences > Add-ons
 2. 点击 "Install..."
-3. 选择 `blender_addon/web_sync.py` 文件
+3. 选择 `web_sync.py` 文件
 4. 启用插件（勾选复选框）
